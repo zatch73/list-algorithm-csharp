@@ -36,6 +36,7 @@
             lista2.removerInicio();
             lista2.percurso();
 
+            lista2.impressao();
             // fim do exercício 2
 
 

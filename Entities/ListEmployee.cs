@@ -109,5 +109,16 @@ class ListEmployee{
        }
     }
 
-
+    public void impressao(){
+        
+        NoEmployee noAux = this.inicio;
+        System.Console.Write("List");
+        while(noAux != null){
+            System.Console.WriteLine("\nNome: "+noAux.nome);
+            System.Console.WriteLine("Idade: "+noAux.idade);
+            System.Console.WriteLine("Telefone: "+noAux.telefone);
+            System.Console.WriteLine("Salario: "+noAux.salario);
+            noAux = noAux.noProx;            
+        }
+    }
 }
