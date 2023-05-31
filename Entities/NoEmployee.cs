@@ -3,14 +3,14 @@ class NoEmployee{
     public int idade;
     public String telefone;
     public double salario;
-    public NoEmployee proxNo;
+    public NoEmployee noProx;
 
     public NoEmployee(String nome, int idade, String telefone, double salario) {
         this.nome = nome;
         this.idade = idade;
         this.telefone = telefone;
         this.salario = salario;
-        proxNo = null;
+        noProx = null;
     }
 
 }

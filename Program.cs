@@ -1,4 +1,4 @@
-﻿namespace ListAlgorithm
+﻿namespace list_algorithm_csharp
 {
 
     class Program
@@ -20,6 +20,35 @@
             lista.percurso();
             // fim do exercício 1
 
+            // saída do exercício 2
+
+            ListEmployee lista2 = new ListEmployee();
+            lista2.inserirInicio("Luffy", 19, "(18) 123123123", 2300.0);
+            lista2.inserirInicio("Takamura", 19, "(18) 123123123", 2300.0);
+            lista2.inserirInicio("Ippo", 19, "(18) 123123123", 2300.0);
+            lista2.inserirInicio("Ichigo", 19, "(18) 123123123", 2300.0);
+            lista2.inserirFim("Zoro", 19, "(21) 321321312", 2300.0);
+
+            lista2.percurso();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             // No? noAtual = null;
             // No? noAnterior = null;
@@ -34,7 +63,7 @@
             //     Console.WriteLine("Não encontrou o no procurado!");
             // }
 
-            
+
         }
     }
 }
