@@ -53,6 +53,7 @@
             lista3.inserirInicio("Geografia", 6, 200, "Jorge Campos");
             lista3.inserirInicio("Historia", 6, 200, "Jorge Campos");
             lista3.impressao();
+            lista3.consultaNome("Geografia", lista3);
 
             // fim do exercício 3
             

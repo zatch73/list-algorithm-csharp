@@ -34,4 +34,35 @@ public class ListSubject {
             noAux = noAux.noProx;            
         }
     }
+
+    public Boolean consulta(string nome, ref NoSubject noAtual, ref NoSubject noAnterior){ 
+        
+        noAtual = this.inicio;
+        noAnterior = null;
+
+        while(noAtual != null){
+            if(noAtual.nome == nome){ //SE ENCONTROU O VALOR
+                return(true);
+            }
+            noAnterior = noAtual;
+            noAtual = noAtual.noProx;
+        }
+    
+        return(false);
+    }
+
+    public void consultaNome(string nome, ListSubject lista){
+        NoSubject? noAtual = null;
+        NoSubject? noAnterior = null;
+
+        Boolean encontrou = lista.consulta(nome, ref noAtual, ref noAnterior);
+        if (encontrou)
+        {
+            Console.WriteLine("Encontrou o no de valor: " + noAtual.nome);
+        }
+        else
+        {
+            Console.WriteLine("Não encontrou o no procurado!");
+        }
+    }
 }
