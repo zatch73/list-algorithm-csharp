@@ -5,7 +5,7 @@
     {
         static void Main(string[] args)
         {
-
+            // saída do exercício 1
             Lista lista = new();
             lista.inserirInicio(22);
             lista.inserirInicio(12);
@@ -18,6 +18,9 @@
             lista.removerFim();
             
             lista.percurso();
+            // fim do exercício 1
+
+
             // No? noAtual = null;
             // No? noAnterior = null;
 
@@ -30,6 +33,8 @@
             // {
             //     Console.WriteLine("Não encontrou o no procurado!");
             // }
+
+            
         }
     }
 }
