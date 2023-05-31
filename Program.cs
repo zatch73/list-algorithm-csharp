@@ -19,7 +19,9 @@
             
             lista.percurso();
             // fim do exercício 1
-
+            System.Console.WriteLine("--------------------------------");
+            System.Console.WriteLine("--------------------------------");
+            System.Console.WriteLine("--------------------------------");
             // saída do exercício 2
 
             ListEmployee lista2 = new ListEmployee();
@@ -38,8 +40,21 @@
 
             lista2.impressao();
             // fim do exercício 2
+            System.Console.WriteLine("--------------------------------");
+            System.Console.WriteLine("--------------------------------");
+            System.Console.WriteLine("--------------------------------");
+            // saída do exercício 3
 
+            ListSubject lista3 = new ListSubject();
 
+            lista3.inserirInicio("Matematica", 6, 200, "Jorge Campos");
+            lista3.inserirInicio("Portugues", 6, 200, "Jorge Campos");
+            lista3.inserirInicio("Ingles", 6, 200, "Jorge Campos");
+            lista3.inserirInicio("Geografia", 6, 200, "Jorge Campos");
+            lista3.inserirInicio("Historia", 6, 200, "Jorge Campos");
+            lista3.impressao();
+
+            // fim do exercício 3
             
 
 

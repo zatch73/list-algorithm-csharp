@@ -2,15 +2,15 @@ public class NoSubject{
     public String nome;
     public int periodo;
     public int cargaHoraria;
-    public String Professor;
-    public NoSubject proxNo;
+    public String professor;
+    public NoSubject noProx;
 
-    public NoSubject(String nome, int periodo, int cargaHoraria, String Professor){
+    public NoSubject(String nome, int periodo, int cargaHoraria, String professor){
         this.nome = nome;
         this.periodo = periodo;
         this.cargaHoraria = cargaHoraria;
-        this.Professor = Professor;
-        this.proxNo = null;
+        this.professor = professor;
+        this.noProx = null;
     }
     
 }
