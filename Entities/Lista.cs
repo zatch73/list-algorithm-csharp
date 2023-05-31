@@ -42,8 +42,8 @@ public class Lista{
        if(this.inicio == null && this.fim == null){
         System.Console.WriteLine("an empty list");
        }else if(this.inicio != null){
-            this.inicio = this.inicio.noProx;
             System.Console.WriteLine("Remove of start position: " + this.inicio.valor);
+            this.inicio = this.inicio.noProx;
 
        }
     }
@@ -56,7 +56,7 @@ public class Lista{
 
             while(noAux != null){
                 if(noAux.noProx == this.fim){
-                    System.Console.WriteLine("Remove of end position: " + noAux.valor);
+                    System.Console.WriteLine("Remove of end position: " + noAux.noProx.valor);
                     this.fim = noAux.noProx;
                     noAux.noProx = null;
 

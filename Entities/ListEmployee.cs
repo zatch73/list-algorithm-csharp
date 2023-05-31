@@ -82,5 +82,32 @@ class ListEmployee{
         }
     }
 
+    public void removerInicio(){
+       if(this.inicio == null && this.fim == null){
+        System.Console.WriteLine("an empty list");
+       }else if(this.inicio != null){
+            System.Console.WriteLine("Remove of start position: " + this.inicio.nome);
+            this.inicio = this.inicio.noProx;
+
+       }
+    }
+
+    public void removerFim(){
+        NoEmployee noAux = this.inicio;
+        if(this.inicio == null && this.fim == null){
+            System.Console.WriteLine("an empty list");
+        }else if(this.inicio != null){
+            while(noAux != null){
+                if(noAux.noProx == this.fim){
+                    System.Console.WriteLine("Remove of end position: " + noAux.noProx.nome);
+                    this.fim = noAux.noProx;
+                    noAux.noProx = null;
+
+                }
+                noAux = noAux.noProx;            
+            }
+       }
+    }
+
 
 }

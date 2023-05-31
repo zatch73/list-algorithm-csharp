@@ -31,7 +31,11 @@
 
             lista2.percurso();
             lista2.consultaNome("Zoro", lista2);
-            
+
+            lista2.removerFim();
+            lista2.removerInicio();
+            lista2.percurso();
+
             // fim do exercício 2
 
 
