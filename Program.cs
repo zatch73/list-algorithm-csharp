@@ -26,42 +26,16 @@
             lista2.inserirInicio("Luffy", 19, "(18) 123123123", 2300.0);
             lista2.inserirInicio("Takamura", 19, "(18) 123123123", 2300.0);
             lista2.inserirInicio("Ippo", 19, "(18) 123123123", 2300.0);
-            lista2.inserirInicio("Ichigo", 19, "(18) 123123123", 2300.0);
+            lista2.inserirFim("Ichigo", 19, "(18) 123123123", 2300.0);
             lista2.inserirFim("Zoro", 19, "(21) 321321312", 2300.0);
 
             lista2.percurso();
+            lista2.consultaNome("Zoro", lista2);
+            
+            // fim do exercício 2
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // No? noAtual = null;
-            // No? noAnterior = null;
-
-            // Boolean encontrou = lista.consulta(10, ref noAtual, ref noAnterior);
-            // if (encontrou)
-            // {
-            //     Console.WriteLine("Encontrou o no de valor: " + noAtual.valor);
-            // }
-            // else
-            // {
-            //     Console.WriteLine("Não encontrou o no procurado!");
-            // }
+            
 
 
         }
