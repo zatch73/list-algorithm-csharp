@@ -5,6 +5,8 @@ class NoEmployee{
     public double salario;
     public NoEmployee noProx;
 
+  
+
     public NoEmployee(String nome, int idade, String telefone, double salario) {
         this.nome = nome;
         this.idade = idade;

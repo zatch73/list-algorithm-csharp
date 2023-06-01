@@ -5,6 +5,8 @@
     {
         static void Main(string[] args)
         {
+
+           
             // saída do exercício 1
             Lista lista = new();
             lista.inserirInicio(22);
@@ -57,8 +59,8 @@
 
             // fim do exercício 3
             
-
-
+             
+            lista3.ordenacaoLista();
         }
     }
 }

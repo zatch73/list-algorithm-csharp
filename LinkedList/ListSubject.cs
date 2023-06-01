@@ -1,6 +1,9 @@
+using System.Text;
 public class ListSubject {
     public NoSubject inicio;
     public NoSubject fim;
+
+    private List<NoSubject> listaTemporaria;
 
     public ListSubject() {
         this.inicio = null;
@@ -63,6 +66,28 @@ public class ListSubject {
         else
         {
             Console.WriteLine("Não encontrou o no procurado!");
+        }
+    }
+
+    //a) Implemente a operação de inserção ordenada de um elemento por nome da disciplina
+
+    public byte conversor(string letra){
+       byte[] codigoANSI = Encoding.GetEncoding("ISO-8859-1").GetBytes(letra.ToString());
+       return codigoANSI[0];
+    }
+    public void ordenacaoLista(){
+
+       NoSubject noAtual = this.inicio;
+       NoSubject noAnterior = null;
+
+        while(noAtual != null){
+            while(conversor(noAtual.nome) < (conversor(noAtual.noProx.nome))){
+                System.Console.WriteLine(noAtual.nome);
+                noAnterior = noAtual;
+                noAtual = noAtual.noProx;
+            }
+            noAnterior = noAtual;
+            noAtual = noAtual.noProx;
         }
     }
 }
