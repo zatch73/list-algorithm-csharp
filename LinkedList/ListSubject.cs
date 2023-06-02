@@ -71,23 +71,34 @@ public class ListSubject {
 
     //a) Implemente a operação de inserção ordenada de um elemento por nome da disciplina
 
-    public byte conversor(string letra){
-       byte[] codigoANSI = Encoding.GetEncoding("ISO-8859-1").GetBytes(letra.ToString());
-       return codigoANSI[0];
-    }
-    public void ordenacaoLista(){
+    public void inserirOrdenado(string nome, int periodo, int cargaHoraria, string professor){
+        NoSubject novoNo = new NoSubject(nome, periodo, cargaHoraria, professor);
+        NoSubject noAtual = this.inicio;
+        if(this.inicio == null && this.fim == null){
+            this.inicio = novoNo;
+            this.fim = novoNo;
+        }else{
+            NoSubject noAnte = null;
+            while(noAtual != null){
+                int valueString = String.Compare(novoNo.nome, noAtual.nome);
+                    if(valueString == -1){
+                        novoNo.noProx =  this.inicio;
+                        this.inicio = novoNo;
+                    }
 
-       NoSubject noAtual = this.inicio;
-       NoSubject noAnterior = null;
-
-        while(noAtual != null){
-            while(conversor(noAtual.nome) < (conversor(noAtual.noProx.nome))){
-                System.Console.WriteLine(noAtual.nome);
-                noAnterior = noAtual;
-                noAtual = noAtual.noProx;
+                    /*
+                    if(valueString == 1){
+                        novoNo.noProx = noAtual;
+                        noAnte.noProx = novoNo;
+                        break;
+                    }
+                    */
+                        
+                    //noAnte = noAtual;
+                    noAtual = noAtual.noProx;
+                
             }
-            noAnterior = noAtual;
-            noAtual = noAtual.noProx;
         }
+       
     }
 }

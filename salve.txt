@@ -1,0 +1,7 @@
+ int value = String.Compare(novoNo.nome, noAtual.nome);
+                // segunda é maior que primeira 
+                if(String.Compare(novoNo.nome, this.inicio.nome) == -1){
+                    novoNo.noProx = this.inicio;
+                    this.inicio = novoNo;
+                    break;
+                }

@@ -1,4 +1,5 @@
-﻿namespace list_algorithm_csharp
+﻿using System;
+namespace list_algorithm_csharp
 {
 
     class Program
@@ -58,9 +59,10 @@
             lista3.consultaNome("Geografia", lista3);
 
             // fim do exercício 3
-            
-             
-            lista3.ordenacaoLista();
+
+            System.Console.WriteLine("\n \n\n\n\n \n\n");
+            lista3.inserirOrdenado("Analise", 6, 200, "Jorge Campos");
+            lista3.impressao();
         }
     }
 }
